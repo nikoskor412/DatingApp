@@ -49,7 +49,7 @@ public class UserRepository : IUserRepository
         .ToListAsync();
     }
 
-    public async Task<bool> SaveAllAsyn()
+    public async Task<bool> SaveAllAsync()
     {
         return await _context.SaveChangesAsync() > 0;
     }
